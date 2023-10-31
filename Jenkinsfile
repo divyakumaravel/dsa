@@ -23,6 +23,17 @@ pipeline {
             steps {
                 sh "./gradlew test"
             }
+            post {
+                success {
+                    sh "echo Tests Succeeded"
+                }
+                failure {
+                    sh "echo Tests Failed"
+                }
+                always {
+                    junit allowEmptyResults: true, skipMarkingBuildUnstable: true, skipPublishingChecks: true, testResults: 'build/test-results/test/*.xml'
+                }
+            }
         }
     }
 }
