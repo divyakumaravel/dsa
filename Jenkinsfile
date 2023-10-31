@@ -2,9 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage("Run clean") {
-            steps {
-                sh "./gradlew clean"
+        parallel {
+            stage("Running Parallel Stages") {
+                steps {
+                    sh "echo parallel stages"
+                }
+            }
+            stage("Run clean") {
+                steps {
+                    sh "./gradlew clean"
+                }
             }
         }
         stage("Run build") {
