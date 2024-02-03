@@ -1,4 +1,4 @@
-package com.example.practice.problems.TwoPointer;
+package com.example.practice.problems.twoPointer;
 
 import org.junit.jupiter.api.Test;
 

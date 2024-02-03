@@ -1,4 +1,4 @@
-package com.example.practice.problems.TwoPointer;
+package com.example.practice.problems.twoPointer;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
