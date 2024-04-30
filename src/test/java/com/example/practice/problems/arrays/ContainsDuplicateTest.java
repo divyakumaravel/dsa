@@ -1,5 +1,6 @@
 package com.example.practice.problems.arrays;
 
+import com.example.practice.problems.blind75.ContainsDuplicate;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

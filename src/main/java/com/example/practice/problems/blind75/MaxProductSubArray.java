@@ -1,4 +1,4 @@
-package com.example.practice.problems.arrays;
+package com.example.practice.problems.blind75;
 
 public class MaxProductSubArray {
     public static void main(String[] args) {
